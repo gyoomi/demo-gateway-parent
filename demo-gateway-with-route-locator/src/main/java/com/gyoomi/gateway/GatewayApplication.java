@@ -31,7 +31,7 @@ public class GatewayApplication {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/jd")
-                        .uri("http://jd.com:80")
+                        .uri("http://jd.com:80/")
                         .id("jd_route")
                 ).build();
     }
